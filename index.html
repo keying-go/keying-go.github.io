@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Ethereal by HTML5 UP</title>
+		<title>Keying Gong</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,7 +25,7 @@
 								<div class="content color0 span-3-75">
 									<h1 class="major">Hello, my name<br />
 									is Keying</h1>
-									<p>This is <strong>Keying Gong</strong>, a data scientist interested in Predictive Modeling and Data Analytics. I graduated from Data Science Institue at Brown University. I'm currently working at HelloFresh in NYC. Swipe to see what I've done.</p>
+									<p>👋 Hey, this is <strong>Keying Gong</strong>, a data scientist interested in Predictive Modeling and Data Analytics. I currently work at HelloFresh in NYC. I graduated from Data Science Institute at Brown University. Swipe to see what I've done.</p>
 									<ul class="actions">
 										<li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
 									</ul>
@@ -44,18 +44,21 @@
 										
 										<li><a href="https://www.linkedin.com/in/keying-gong/" class="button">Linkedin</a></li>
 										<li><a href="https://github.com/keying-go" class="button">github</a></li>
+                                        <li><a href="https://drive.google.com/file/d/1hPGRHsO-VaPSdzd2-bdkPRHqsY4xkDK3/view?usp=sharing" class="button">resume</a></li>
 										
 									</ul>
 								</div>
 							</div>
 						</section>
-						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight medium right" id="first">
+
+						<!-- Panel (CV) -->
+							<section class="panel spotlight medium left" id="first">
 								<div class="content span-7">
 									<h2 class="major"><a href="https://github.com/keying-go/Empathizers">CV | Facial Expression Detection</a></h2>
-									<p>We implemented 4 models in total to classify the input facial expression images into one of the 7 categories (angry, disgust, fear, happy, neutral, sad, and surprise).
+									<p>The "Emphathizer" system detects human faces and recognizes emotions in real-time. For emotion recogniton, we implemented 4 models in total to classify the input facial expression images into one of the 7 categories (angry, disgust, fear, happy, neutral, sad, and surprise).
 										We first implemented a self-designed Convolutional Neural Network (CNN) that achieved 63.19% accuracy. Then, to further improve the accuracy of expression detection, we leveraged transfer learning by having 3 backbone structures (VGG-16, MobileNet, and ResNet50) along with our own classification heads. The optimal structure achieved a test accuracy of 69.47%.
-										Our system should be used with individuals' explicit consent. It should not be misused for malicious activities.</p>
+										Finally, we integrated the best model with our interface that reads the camera inputs and detects the face.
+                                        Our system should be used with individuals' explicit consent. It should not be misused for malicious activities.</p>
                                     <p> Click picture to see full poster : ) </p>
 								</div>
 								<div class="image filtered tinted" data-position="top left">
@@ -66,14 +69,70 @@
 
 						
 						
-						<!-- Panel (Poster) -->
+						<!-- Panel (CV Poster) -->
 							<section class="panel">
 								<div class="gallery">
             
 									<a href="images/gallery/fulls/Emphathizer_Poster.png" class="image filtered span-4-5" data-position="right"><img src="images/gallery/fulls/Emphathizer_Poster.png" alt="" /></a>
 								</div>
 							</section>
-					
+                        
+                        <!-- Panel (nlp) -->
+							<section class="panel spotlight medium right" id="second">
+								<div class="content span-7">
+									<h2 class="major"><a href="https://github.com/keying-go/Ukrainian-War-Sentiment-Analysis-Topic-Modeling">NLP | Ukrainian War Sentiment Analysis + Topic Discovery</a></h2>
+									<p>To better understand English-speaking Twitter users' reactions to this conflict, we use bidirectional LSTM model to analyze the sentiments and use Latent Dirichlet Allocation (LDA) to discover topics of the discussions.
+                                        We also visualize our results to explore how the emotions change overtime. Combining the topic discovery results and sentiment analysis, we can explore possible effect of topics on emotions.</p>
+                                    <p> Click picture to see full poster : ) </p>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									<img src="images/pic02.jpg" alt="" />
+								</div>
+								
+							</section>
+
+						
+						
+						<!-- Panel (NLP Poster) -->
+							<section class="panel">
+								<div class="gallery">
+            
+									<a href="images/gallery/fulls/2470poster.jpg" class="image filtered span-4-5" data-position="right"><img src="images/gallery/fulls/2470poster.jpg" alt="" /></a>
+								</div>
+							</section>
+
+                        <!-- Panel (Shopper) -->
+							<section class="panel spotlight medium left" id="first">
+								<div class="content span-7">
+									<h2 class="major"><a href="https://github.com/keying-go/online_shoppers_purchase_intention">Online Shoppers Purchase Intention Prediction</a></h2>
+									<p>Implemented 5 classification algorithms (Random Forest, XGBoost, KNN, SVM, Logistic Regression with L2 regularization) in Python to predict shoppers’ purchase decisions based on web traffic data and user information.
+                                        Among them, Random Forest achieved 90.3% accuracy and 0.65 f1 score. After prediction, I interpreted model result with permutation feature importance and SHAP values. Predictive features such as "Page Values" are valuable for targeted marketing strategies.  </p>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									<img src="images/pic03.jpg" alt="" />
+								</div>
+								
+							</section>
+
+						<!-- Panel (Fatal Shootings) -->
+							<section class="panel color4-alt">
+								<div class="intro color1">
+									<h2 class="major"><a href="https://github.com/keying-go/FatalPoliceShootings">Fatal Police Shootings</a></h2>
+									<p>On average, police in the United States shoot and kill more than 1,000 people every year.
+                                        In this project, we analyze and predict 2022 fatal shootings using time-series model for the whole population and for different racial groups</p>
+                                    <p> Although half of the people shot and killed by police are White, Black Americans are shot at a disproportionate rate. Click the pictures to see the interactive visualization. </p>    
+								</div>
+								<div class="gallery">
+									<div class="group span-3">
+                                        <a href="images/white_rate.html" class="image filtered span-3" data-position="bottom"><img src="images/white_rate_2015.png" alt="" /></a>
+										<a href="images/white_count.html" class="image filtered span-3" data-position="bottom"><img src="images/white_count_2015.png" alt="" /></a>
+                                    </div>
+                                    <div class="group span-3">
+										<a href="images/black_rate.html" class="image filtered span-3" data-position="bottom"><img src="images/black_rate_2015.png" alt="" /></a>
+										<a href="images/black_count.html" class="image filtered span-3" data-position="bottom"><img src="images/black_count_2015.png" alt="" /></a>
+									</div>
+								</div>
+							</section>
 
 
 			</div>
